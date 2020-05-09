@@ -1,1 +1,2 @@
-
+model_checkpoint_path: "model_nextitnet_transfer_pretrain.ckpt"
+all_model_checkpoint_paths: "model_nextitnet_transfer_pretrain.ckpt"
