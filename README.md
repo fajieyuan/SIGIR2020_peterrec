@@ -59,6 +59,9 @@ Replacing the demo dataset with our public datasets (including both pretraining 
 You will reproduce the results reported in our paper using our papar settings, including learning rate, embedding size,
 dilations, batch size, etc. Note that the results reported in the paper are based on the same hyper-parameter settings for fair comparison and ablation tests. You may further finetune hyper-parameters to obtatin the best performance. For example, we use 0.001 as learning rate, but you may find 0.0001 performs better, although all insights in the paper keep consistent.
 In addition, there are some other improvement places, such as the negative sampling used for funetuning. For simplicity, we implement a very basic one by uniform sampling, suggest you using more advanced sampler such as LambdaFM (LambdaFM: Learning Optimal Ranking with Factorization Machines Using Lambda Surrogates). 
+### DataSet Link
+ColdRec2: https://drive.google.com/open?id=1OcvbBJN0jlPTEjE0lvcDfXRkzOjepMXH
+ColdRec1: https://drive.google.com/open?id=1N7pMXLh8LkSYDX30-zId1pEMeNDmA7t6
 
 ### recommendation settings
 NextitNet_TF_Pretrain.py
