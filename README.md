@@ -79,7 +79,7 @@ NextitNet_TF_Pretrain.py
         'kernel_size': 3,
         'learning_rate':0.001,
         'batch_size':16,# you can try 32, 64, 128, 256, etc.
-        'iterations':400,
+        'iterations':100, #you can stop it once converged
         'is_negsample':True #False denotes no negative sampling
     }
      
