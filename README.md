@@ -28,7 +28,7 @@ GRec_TF_Pretrain.py: Petrained by the encoder of GRec [1] (i.e., noncausal cnn)
 
 First:  python NextitNet_TF_Pretrain.py
 
-After convergence(you can stop it once the pretrained model are saved!)
+After convergence(you can stop it once the pretrained model is saved!)
 
 Second: python PeterRec_cau_serial.py
 
