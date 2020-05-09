@@ -9,6 +9,7 @@ Chinese Introduction: https://zhuanlan.zhihu.com/p/139048117
 <p>
   
 ```
+Please cite our paper if you use our code or datasets in your publication.
 @article{yuan2020parameter,
   title={Parameter-Efficient Transfer from Sequential Behaviors for User Modeling and Recommendation},
   author={Yuan, Fajie and He, Xiangnan and Karatzoglou, Alexandros and Zhang, Liguang},
