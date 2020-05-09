@@ -124,3 +124,12 @@ PeterRec settings (E.g.,PeterRec_cau_serial.py):
   year={2020}
 }
 ```
+```
+[3]
+@article{sun2020generic,
+  title={A Generic Network Compression Framework for Sequential Recommender Systems},
+  author={Sun, Yang and Yuan, Fajie and Yang, Ming and Wei, Guoao and Zhao, Zhou and Liu, Duo},
+  journal={arXiv preprint arXiv:2004.13139},
+  year={2020}
+}
+```
