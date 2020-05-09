@@ -1,5 +1,11 @@
 # SIGIR2020_PeterRec
 # Parameter-Efficient Transfer from Sequential Behaviors for User Profiling and Recommendation
+<p align="center">
+    <br>
+    <img src="https://pic1.zhimg.com/80/v2-68007f2a6b6fd29807d76065137a9cd8_1440w.jpg" width="400"/>
+    <br>
+<p>
+  
 ```
 @article{yuan2020parameter,
   title={Parameter-Efficient Transfer from Sequential Behaviors for User Modeling and Recommendation},
