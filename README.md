@@ -1,12 +1,13 @@
 # sigir2020_peterrec
-## Parameter-Efficient Transfer from Sequential Behaviors for User Profiling and Recommendation
+# Parameter-Efficient Transfer from Sequential Behaviors for User Profiling and Recommendation
+```
 @article{yuan2020parameter,
   title={Parameter-Efficient Transfer from Sequential Behaviors for User Profiling and Recommendation},
   author={Yuan, Fajie and He, Xiangnan and Karatzoglou, Alexandros and Zhang, Liguang},
   journal={arXiv preprint arXiv:2001.04253},
   year={2020}
 }
-
+```
 
 PeterRec_cau_parallel.py: PeterRec with causal cnn and parallel insertion
 
@@ -51,6 +52,7 @@ dilations, batch size, etc. Note that the results reported in the paper are base
 
 
 Related work:
+```
 [1]
 @inproceedings{yuan2019simple,
   title={A simple convolutional generative network for next item recommendation},
@@ -59,7 +61,8 @@ Related work:
   pages={582--590},
   year={2019}
 }
-
+```
+```
 [2]
 @article{fajie2019modeling,
 	title={Future Data Helps Training: Modeling Future Contexts for Session-based Recommendation},
@@ -67,3 +70,4 @@ Related work:
 	journal={The world wide web conference},
 	year={2019}
 }
+```
