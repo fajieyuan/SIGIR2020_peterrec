@@ -1,4 +1,4 @@
-# sigir2020_peterrec
+# SIGIR2020_PeterRec
 # Parameter-Efficient Transfer from Sequential Behaviors for User Profiling and Recommendation
 ```
 @article{yuan2020parameter,
