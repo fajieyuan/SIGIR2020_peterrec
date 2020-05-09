@@ -9,9 +9,13 @@
 
 
 PeterRec_cau_parallel.py: PeterRec with causal cnn and parallel insertion
+
 PeterRec_cau_serial.py: PeterRec with causal cnn and serial insertion
+
 PeterRec_noncau_parallel.py: PeterRec with noncausal cnn and parallel insertion
+
 PeterRec_noncau_serial.py: PeterRec with causal cnn and serial insertion
+
 
 
 NextitNet_TF_Pretrain.py: Petrained by NextItNet [0] (i.e., causal cnn)
