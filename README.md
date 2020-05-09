@@ -2,7 +2,7 @@
 # Parameter-Efficient Transfer from Sequential Behaviors for User Profiling and Recommendation
 ```
 @article{yuan2020parameter,
-  title={Parameter-Efficient Transfer from Sequential Behaviors for User Profiling and Recommendation},
+  title={Parameter-Efficient Transfer from Sequential Behaviors for User Modeling and Recommendation},
   author={Yuan, Fajie and He, Xiangnan and Karatzoglou, Alexandros and Zhang, Liguang},
   journal={arXiv preprint arXiv:2001.04253},
   year={2020}
