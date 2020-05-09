@@ -50,7 +50,7 @@ Replacing the demo dataset with our public datasets (including both pretraining 
 You will reproduce the results reported in our paper using our papar settings, including learning rate, embedding size,
 dilations, batch size, etc. Note that the results reported in the paper are based on the same hyper-parameter settings for fair comparison and ablation tests. You may further finetune hyper-parameters to obtatin the best performance. For example, we use 0.001 as learning rate, but you may find 0.0001 performs better, although all insights in the paper keep consistent.
 
-###recommendation settings
+### recommendation settings
 NextitNet_TF_Pretrain.py
 
     model_para = {
@@ -58,13 +58,34 @@ NextitNet_TF_Pretrain.py
         'dilated_channels': 256,
         'dilations': [1,4,1,4,1,4,1,4,],
         'kernel_size': 3,
-        'learning_rate':0.0001,
+        'learning_rate':0.001,
         'batch_size':16,# you can try 32, 64, 128, 256, etc.
         'iterations':400,
         'is_negsample':True #False denotes no negative sampling
     }
+     parser.add_argument('--eval_iter', type=int, default=10000,
+                        help='Sample generator output evry x steps')
+     parser.add_argument('--save_para_every', type=int, default=10000,
+                        help='save model parameters every')
+                        
+PeterRec settings (E.g.,PeterRec_cau_serial.py):
 
-
+    model_para = {
+        'item_size': len(items),
+        'target_item_size': len(targets),
+        'dilated_channels': 256,
+        'cardinality': 1, # 1 is ResNet, otherwise is ResNeXt (performs similarly, but slowly)
+        'dilations': [1,4,1,4,1,4,1,4,],
+        'kernel_size': 3,
+        'learning_rate':0.0001,
+        'batch_size':512, #you can not use batch_size=1 since in the following you use np.squeeze will reuduce one dimension
+        'iterations': 100,
+        'has_positionalembedding': args.has_positionalembedding
+    }
+    parser.add_argument('--eval_iter', type=int, default=500,
+                        help='Sample generator output evry x steps')
+    parser.add_argument('--save_para_every', type=int, default=500,
+                        help='save model parameters every')
 Related work:
 ```
 [1]
