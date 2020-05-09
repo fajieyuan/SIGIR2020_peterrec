@@ -44,6 +44,19 @@ Second: python PeterRec_noncau_parallel.py
 
 ## Running our paper:
 Replacing the demo dataset with our public datasets (including both pretraining and finettuning):
+NextitNet_TF_Pretrain.py
+
+    model_para = {
+        'item_size': len(items),
+        'dilated_channels': 256,
+        'dilations': [1,4,1,4,1,4,1,4,],
+        'kernel_size': 3,
+        'learning_rate':0.0001,
+        'batch_size':16,# you can try 32, 64, 128, 256, etc.
+        'iterations':400,
+        'is_negsample':True #False denotes no negative sampling
+    }
+
 
 You will reproduce the results reported in our paper using our papar settings, including learning rate, embedding size,
 dilations, batch size, etc. Note that the results reported in the paper are based on the same hyper-parameter settings for fair comparison and ablation tests. You may further finetune hyper-parameters to obtatin the best performance. For example, we use 0.001 as learning rate, but you may find 0.0001 performs better, although all insights in the paper keep consistent.
