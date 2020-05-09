@@ -9,6 +9,7 @@
 }
 ```
 
+
 PeterRec_cau_parallel.py: PeterRec with causal cnn and parallel insertion
 
 PeterRec_cau_serial.py: PeterRec with causal cnn and serial insertion
@@ -86,6 +87,11 @@ PeterRec settings (E.g.,PeterRec_cau_serial.py):
                         help='Sample generator output evry x steps')
     parser.add_argument('--save_para_every', type=int, default=500,
                         help='save model parameters every')
+
+## Environments
+* Tensorflow (version: 1.7.0)
+* python 2.7
+
 ## Related work:
 ```
 [1]
