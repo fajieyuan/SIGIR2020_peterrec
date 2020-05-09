@@ -64,10 +64,11 @@ Related work:
 ```
 ```
 [2]
-@article{fajie2019modeling,
-	title={Future Data Helps Training: Modeling Future Contexts for Session-based Recommendation},
-	author={Yuan, Fajie and He, Xiangnan and Jiang, Haochuan and Guo, Guibing and Xiong, Jian and Xu, Zhezhao and Xiong, Yilin},
-	journal={The world wide web conference},
-	year={2019}
+@inproceedings{yuan2020future,
+  title={Future Data Helps Training: Modeling Future Contexts for Session-based Recommendation},
+  author={Yuan, Fajie and He, Xiangnan and Jiang, Haochuan and Guo, Guibing and Xiong, Jian and Xu, Zhezhao and Xiong, Yilin},
+  booktitle={Proceedings of The Web Conference 2020},
+  pages={303--313},
+  year={2020}
 }
 ```
