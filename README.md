@@ -58,10 +58,15 @@ Replacing the demo dataset with our public datasets (including both pretraining 
 
 You will reproduce the results reported in our paper using our papar settings, including learning rate, embedding size,
 dilations, batch size, etc. Note that the results reported in the paper are based on the same hyper-parameter settings for fair comparison and ablation tests. You may further finetune hyper-parameters to obtatin the best performance. For example, we use 0.001 as learning rate, but you may find 0.0001 performs better, although all insights in the paper keep consistent.
+In addition, there are some other improvement places, such as the negative sampling used for funetuning. For simplicity, we implement a very basic one by uniform sampling, suggest you using more advanced sampler such as LambdaFM (LambdaFM: Learning Optimal Ranking with Factorization Machines Using Lambda Surrogates). 
 
 ### recommendation settings
 NextitNet_TF_Pretrain.py
 
+    parser.add_argument('--eval_iter', type=int, default=10000,
+                        help='Sample generator output evry x steps')
+    parser.add_argument('--save_para_every', type=int, default=10000,
+                        help='save model parameters every')
     model_para = {
         'item_size': len(items),
         'dilated_channels': 256,
@@ -72,13 +77,14 @@ NextitNet_TF_Pretrain.py
         'iterations':400,
         'is_negsample':True #False denotes no negative sampling
     }
-     parser.add_argument('--eval_iter', type=int, default=10000,
-                        help='Sample generator output evry x steps')
-     parser.add_argument('--save_para_every', type=int, default=10000,
-                        help='save model parameters every')
+     
                         
 PeterRec settings (E.g.,PeterRec_cau_serial.py):
 
+    parser.add_argument('--eval_iter', type=int, default=500,
+                        help='Sample generator output evry x steps')
+    parser.add_argument('--save_para_every', type=int, default=500,
+                        help='save model parameters every')
     model_para = {
         'item_size': len(items),
         'target_item_size': len(targets),
@@ -91,10 +97,7 @@ PeterRec settings (E.g.,PeterRec_cau_serial.py):
         'iterations': 100,
         'has_positionalembedding': args.has_positionalembedding
     }
-    parser.add_argument('--eval_iter', type=int, default=500,
-                        help='Sample generator output evry x steps')
-    parser.add_argument('--save_para_every', type=int, default=500,
-                        help='save model parameters every')
+  
 
 ## Environments
 * Tensorflow (version: 1.7.0)
