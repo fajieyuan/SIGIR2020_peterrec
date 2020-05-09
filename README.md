@@ -19,6 +19,7 @@ PeterRec_noncau_serial.py: PeterRec with causal cnn and serial insertion
 
 
 NextitNet_TF_Pretrain.py: Petrained by NextItNet [0] (i.e., causal cnn)
+
 GRec_TF_Pretrain.py: Petrained by the encoder of GRec [1] (i.e., noncausal cnn)
 
 
