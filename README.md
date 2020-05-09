@@ -54,8 +54,6 @@ Second: python PeterRec_noncau_parallel.py
 ## Running our paper:
 Replacing the demo dataset with our public datasets (including both pretraining and finetuning):
 
-
-
 You will reproduce the results reported in our paper using our papar settings, including learning rate, embedding size,
 dilations, batch size, etc. Note that the results reported in the paper are based on the same hyper-parameter settings for fair comparison and ablation tests. You may further finetune hyper-parameters to obtatin the best performance. For example, we use 0.001 as learning rate, but you may find 0.0001 performs better, although all insights in the paper keep consistent.
 In addition, there are some other improvement places, such as the negative sampling used for funetuning. For simplicity, we implement a very basic one by uniform sampling, suggest you using more advanced sampler such as LambdaFM (LambdaFM: Learning Optimal Ranking with Factorization Machines Using Lambda Surrogates). 
@@ -72,6 +70,8 @@ NextitNet_TF_Pretrain.py
                         help='Sample generator output evry x steps')
     parser.add_argument('--save_para_every', type=int, default=10000,
                         help='save model parameters every')
+    parser.add_argument('--datapath', type=str, default='Data/Session/coldrec2_pre.csv',
+                        help='data path')
     model_para = {
         'item_size': len(items),
         'dilated_channels': 256,
@@ -90,6 +90,8 @@ PeterRec settings (E.g.,PeterRec_cau_serial.py):
                         help='Sample generator output evry x steps')
     parser.add_argument('--save_para_every', type=int, default=500,
                         help='save model parameters every')
+    parser.add_argument('--datapath', type=str, default='Data/Session/coldrec2_fine.csv',
+                        help='data path')
     model_para = {
         'item_size': len(items),
         'target_item_size': len(targets),
