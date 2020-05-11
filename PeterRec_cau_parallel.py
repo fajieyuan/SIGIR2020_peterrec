@@ -109,7 +109,7 @@ def main():
 
     variables_to_restore = [v for v in trainable_vars if v.name.find("mp")==-1 ]
     mp_vars = [v for v in trainable_vars if v.name.find("mp") != -1]
-    layer_norm2 = [v for v in trainable_vars if v.name.find("layer_norm2") != -1]# we suggest finening layer_norm2 for parallel insertion--sometimes slightly better, around 0.3-0.5%
+    layer_norm2 = [v for v in trainable_vars if v.name.find("layer_norm2") != -1]# we suggest retraining layer_norm2 for parallel insertion--sometimes slightly better, around 0.3-0.5%
 
     sess.run(init)
 
