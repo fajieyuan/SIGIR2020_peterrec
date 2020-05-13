@@ -13,7 +13,7 @@ Please cite our paper if you use our code or datasets in your publication.
 @article{yuan2020parameter,
   title={Parameter-Efficient Transfer from Sequential Behaviors for User Modeling and Recommendation},
   author={Yuan, Fajie and He, Xiangnan and Karatzoglou, Alexandros and Zhang, Liguang},
-  journal={arXiv preprint arXiv:2001.04253},
+  journal={Proceedings of the 42nd international ACM SIGIR conference on Research and development in Information Retrieval},
   year={2020}
 }
 ```
@@ -59,6 +59,8 @@ You will reproduce the results reported in our paper using our papar settings, i
 dilations, batch size, etc. Note that the results reported in the paper are based on the same hyper-parameter settings for fair comparison and ablation tests. You may further finetune hyper-parameters to obtatin the best performance. For example, we use 0.001 as learning rate during finetuning, you may find 0.0001 performs better although all insights in the paper keep consistent.
 In addition, there are some other improvement places, such as the negative sampling used for funetuning. For simplicity, we implement a very basic one by uniform sampling, suggest you using more advanced sampler such as LambdaFM 
 (LambdaFM: Learning Optimal Ranking with Factorization Machines Using Lambda Surrogates). 
+
+Note that our pretraining network (e.g., NextitNet_TF_Pretrain.py) employs a basic sampling function in TF, you can simply replace it with your own sampler and loss if you are dealing with hundreds of millions of item pool in real industry.
 ### DataSet （desensitized）Links
 ```
 ColdRec2: https://drive.google.com/open?id=1OcvbBJN0jlPTEjE0lvcDfXRkzOjepMXH
