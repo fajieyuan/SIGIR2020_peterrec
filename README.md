@@ -138,7 +138,7 @@ PeterRec settings (E.g.,PeterRec_cau_serial.py):
 @article{sun2020generic,
   title={A Generic Network Compression Framework for Sequential Recommender Systems},
   author={Sun, Yang and Yuan, Fajie and Yang, Ming and Wei, Guoao and Zhao, Zhou and Liu, Duo},
-  journal={arXiv preprint arXiv:2004.13139},
+  journal={Proceedings of the Twelfth ACM International Conference on Web Search and Data Mining},
   year={2020}
 }
 ```
