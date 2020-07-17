@@ -72,8 +72,8 @@ class NextItNet_Decoder:
         loss = tf.nn.sparse_softmax_cross_entropy_with_logits(labels=label_flat, logits=logits_2D)
         self.loss_test = tf.reduce_mean(loss)
         probs_flat = tf.nn.softmax(logits_2D)
-        self.g_probs = tf.reshape(probs_flat, [-1, 1, model_para['item_size']])
-        self.top_k = tf.nn.top_k(self.g_probs[:, -1], k=5, name='top-k')
+        self.g_probs = tf.reshape(probs_flat, [-1, 1, model_para['item_size']]) #slow 
+        self.top_k = tf.nn.top_k(self.g_probs[:, -1], k=5, name='top-k') #faster, if you change [probs] = sess.run([itemrec.g_probs],....) in NextitNet_TF_Pretrain.py to top_k=sess.run([itemrec.top_k],....) 
 
 
 
