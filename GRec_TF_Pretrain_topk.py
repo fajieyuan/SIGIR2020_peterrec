@@ -250,7 +250,7 @@ def main():
         'iterations':400,
         'max_position':args.max_position,#maximum number of for positional embedding, it has to be larger than the sequence lens
         'has_positionalembedding':args.has_positionalembedding,
-        'is_negsample':True, #False denotes no negative sampling
+        'is_negsample':True, #False denotes no negative sampling.
         'top_k':args.top_k
     }
 
