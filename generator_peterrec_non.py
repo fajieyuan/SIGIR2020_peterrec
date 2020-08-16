@@ -102,7 +102,7 @@ class NextItNet_Decoder:
         probs_flat = tf.nn.softmax(logits_2D)
         # self.g_probs = tf.reshape(probs_flat, [-1, tf.shape(self.input_predict)[1], model_para['item_size']])
         self.log_probs = probs_flat
-        # self.top_k = tf.nn.top_k(probs_flat, k=model_para['top_k'], name='top-k')
+        self.top_k = tf.nn.top_k(probs_flat, k=model_para['top_k'], name='top-k')
 
 
     def gather_indexes(self,sequence_tensor, positions):
