@@ -112,7 +112,7 @@ def main():
         'learning_rate':0.001,
         'batch_size':2,
         'iterations':400,
-        'is_negsample':False #False denotes using full softmax
+        'is_negsample':True #False denotes using full softmax
     }
 
     itemrec = generator_recsys_cau.NextItNet_Decoder(model_para)
