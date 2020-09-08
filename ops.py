@@ -35,7 +35,7 @@ def nextitnet_residual_block(input_, dilation, layer_id,
 def get_mp(input_,cardinality=32, name="mp"):
     with tf.variable_scope(name):
         residual_channels = input_.get_shape()[-1]
-        hidden_size = residual_channels / (cardinality * 8)
+        hidden_size = residual_channels / (cardinality * 4)
         blocksets = list()
         for i in range(cardinality):
             conv_down_i = conv1d(input_, hidden_size,
