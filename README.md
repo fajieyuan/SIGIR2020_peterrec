@@ -49,8 +49,8 @@ Second: python PeterRec_cau_serial.py (or  PeterRec_cau_serial_lambdafm.py)
 
 Make sure PeterRec is converged, sometimes it will keep relatively stable for several iteractions and then keep increasing again.
 
-Note that you are ABLE to use two types of evaluation methods, sampled top-N as in our paper or evaluating all items. Be careful, if you use PeterRec_cau_serial_lambdafm.py, which means you are optimizing top-N metrics, and as a result, you have to evaluate all items, rather than sampled metrics, since sampled metrics are more consistent with AUC rather than true top-N. But if you BPR or CE loss with random negative sampler, you should use sampled metrics since the two loss with random sampler directly optimizes AUC. 
-I refer you to a recent papaer "On Sampled Metrics for Item Recommendation" for more details。In short, sampled metrics = AUC, rather than true top-N。 BPR optimizes AUC, lambdafm optimizes true top-N metrics (e.g., MRR@N, NDCG@N).
+Note that you are ABLE to use two types of evaluation methods, sampled top-N as in our paper or evaluating all items. Be careful, if you use PeterRec_cau_serial_lambdafm.py, which means you are optimizing top-N metrics, then you have to evaluate prediction accuracy among all items, rather than sampled metrics --- since sampled metrics are more consistent with AUC rather than true top-N. But if you BPR or CE loss with random negative sampler, you should use sampled metrics since the two loss with random sampler directly optimizes AUC. 
+I refer you to a recent papaer "On Sampled Metrics for Item Recommendation" for more details。In short, sampled metrics = AUC, rather than true top-N. BPR optimizes AUC, while lambdafm optimizes true top-N metrics (e.g., MRR@N, NDCG@N). If you use the correct evaluation methods, all insights and conclusions in our paper hold well.
 
 or
 
