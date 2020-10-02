@@ -22,6 +22,7 @@ Please cite our paper if you use our code or datasets in your publication.
 PeterRec_cau_parallel.py: PeterRec with causal cnn and parallel insertion
 
 PeterRec_cau_serial.py: PeterRec with causal cnn and serial insertion
+
 PeterRec_cau_serial_lambdafm.py: PeterRec_cau_serial.py with lambdafm-based negative sampler 
 and evaluate all items rather than sampling 100 items for evaluation.
 
