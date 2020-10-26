@@ -68,7 +68,7 @@ In addition, there are some other improvement places, such as the negative sampl
 ### DataSet （desensitized）Links
 ```
 ColdRec2 (used for this paper): https://drive.google.com/open?id=1OcvbBJN0jlPTEjE0lvcDfXRkzOjepMXH
-ColdRec2 (clicking and liking data is separated): https://drive.google.com/file/d/1imhHUsivh6oMEtEW-RwVc4OsDqn-xOaP/view
+ColdRec2 (clicking and liking data is separated): https://drive.google.com/file/d/1imhHUsivh6oMEtEW-RwVc4OsDqn-xOaP/view?usp=sharing
 ColdRec1: https://drive.google.com/open?id=1N7pMXLh8LkSYDX30-zId1pEMeNDmA7t6
 
 ```
