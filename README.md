@@ -68,11 +68,18 @@ In addition, there are some other improvement places, such as the negative sampl
 ### DataSet （desensitized）Links
 ```
 ColdRec2 (used for this paper): https://drive.google.com/open?id=1OcvbBJN0jlPTEjE0lvcDfXRkzOjepMXH
-ColdRec2 (clicking and liking data is separated): https://drive.google.com/file/d/1imhHUsivh6oMEtEW-RwVc4OsDqn-xOaP/view?usp=sharing
 ColdRec1: https://drive.google.com/open?id=1N7pMXLh8LkSYDX30-zId1pEMeNDmA7t6
 
 ```
 Note that we have provided the original dataset used in the paper and several preprocessed datasets for an easy try. That is, for simplicity, we provide a source dataset along with a target dataset for each task, while in practice it is suggested to use one source dataset pretrained to serve all target tasks (make sure your source dataset covers all ID indices in the target task).
+
+The ColdRec2 datasets has both clicking and liking actions, we have provided the following dataset, which is used for future research by separating clicking and liking data.
+### DataSet （desensitized）Links
+```
+ColdRec2 (clicking and liking data is separated): https://drive.google.com/file/d/1imhHUsivh6oMEtEW-RwVc4OsDqn-xOaP/view?usp=sharing
+```
+
+
 ### recommendation settings
 NextitNet_TF_Pretrain.py
 
@@ -147,6 +154,15 @@ PeterRec settings (E.g.,PeterRec_cau_serial.py):
   title={A Generic Network Compression Framework for Sequential Recommender Systems},
   author={Sun, Yang and Yuan, Fajie and Yang, Ming and Wei, Guoao and Zhao, Zhou and Liu, Duo},
   journal={Proceedings of the Twelfth ACM International Conference on Web Search and Data Mining},
+  year={2020}
+}
+```
+```
+[4]
+@article{yuan2020one,
+  title={One Person, One Model, One World: Learning Continual User Representation without Forgetting},
+  author={Yuan, Fajie and Zhang, Guoxiao and Karatzoglou, Alexandros and He, Xiangnan and Jose, Joemon and Kong, Beibei and Li, Yudong},
+  journal={arXiv preprint arXiv:2009.13724},
   year={2020}
 }
 ```
