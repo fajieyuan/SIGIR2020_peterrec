@@ -67,13 +67,14 @@ In addition, there are some other improvement places, such as the negative sampl
 (LambdaFM: Learning Optimal Ranking with Factorization Machines Using Lambda Surrogates), i.e., PeterRec_cau_serial_lambdafm.py. Similarly, our pretraining network (e.g., NextitNet_TF_Pretrain.py) also employs a basic sampling function in TF, you can also replace it with your own one if you are dealing with hundreds of millions of items in a very large-scale system.
 ### DataSet （desensitized）Links
 ```
-ColdRec2 (used for this paper): https://drive.google.com/open?id=1OcvbBJN0jlPTEjE0lvcDfXRkzOjepMXH
+ColdRec2: https://drive.google.com/open?id=1OcvbBJN0jlPTEjE0lvcDfXRkzOjepMXH
 ColdRec1: https://drive.google.com/open?id=1N7pMXLh8LkSYDX30-zId1pEMeNDmA7t6
 
 ```
 Note that we have provided the original dataset used in the paper and several preprocessed datasets for an easy try. That is, for simplicity, we provide a source dataset along with a target dataset for each task, while in practice it is suggested to use one source dataset pretrained to serve all target tasks (make sure your source dataset covers all ID indices in the target task).
 
-The ColdRec2 datasets has both clicking and liking actions, we have provided the following dataset, which is used for future research by separating clicking and liking data.
+
+In fact, the ColdRec2 datasets has both clicking and liking actions, we have provided the following dataset, which can be used for future research by separating clicking and liking data.
 ### DataSet （desensitized）Links
 ```
 ColdRec2 (clicking and liking data is separated): https://drive.google.com/file/d/1imhHUsivh6oMEtEW-RwVc4OsDqn-xOaP/view?usp=sharing
