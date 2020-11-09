@@ -56,7 +56,7 @@ I refer you to a recent papaer "On Sampled Metrics for Item Recommendation" for 
 
 or
 
-First:  python GRec_TF_Pretrain.py (if you have it is slower, I suggest you slightly change the evaluation following `NextitNet_TF_Pretrain_topk.py')
+First:  python GRec_TF_Pretrain.py (if you find it is slower, I suggest you slightly change the evaluation following `NextitNet_TF_Pretrain_topk.py')
 
 Second: python PeterRec_noncau_parallel.py
 
