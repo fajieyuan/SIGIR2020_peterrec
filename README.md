@@ -17,7 +17,7 @@ Please cite our paper if you use our code or datasets in your publication.
   year={2020}
 }
 ```
-## If you want to use PeterRec in real production system. I strongly suggest: (1) understand our code released here ; (2)using TFRecord and tf.estimator to replace tf.placeholder (very slow), which is around 7~10 times faster; (3) contact fajieyuan@tencent.com if you could not achieve expected results. (E.g., No personalization for new user recommendation, 99% there are bugs in your project!!)
+## If you want to use PeterRec in real production system. I strongly suggest: (1) understand our code released here ; (2)using TFRecord and tf.estimator to replace tf.placeholder (very slow), which is around 10 times faster; (3) contact fajieyuan@tencent.com if you could not achieve expected results. (E.g., No personalization for new user recommendation, 99% there are bugs in your project!!)
 
 ---------------------------------------------------
 
@@ -84,7 +84,8 @@ ColdRec2 (clicking and liking data is separated): https://drive.google.com/file/
 
 
 ### recommendation settings (Be careful!)
-### it will be much slower if eval_iter is smaller since it means how often you perform evaluation.
+### it will be much slower if eval_iter is smaller as it represents how often you perform evaluation. 
+### it may takes only 1 or 2 iterations to converge. 
 
 NextitNet_TF_Pretrain_topk.py
 ```js 
@@ -100,8 +101,8 @@ NextitNet_TF_Pretrain_topk.py
         'dilations': [1,4,1,4,1,4,1,4,], # note 1 4 means  1 2 4 8
         'kernel_size': 3,
         'learning_rate':0.001,
-        'batch_size':16,# you can try 32, 64, 128, 256, etc.
-        'iterations':5, #you can stop it once converged
+        'batch_size':32,# you can try 32, 64, 128, 256, etc.
+        'iterations':5, #you can stop it once it saves parameters once
         'is_negsample':True #False denotes no negative sampling
     }
 ```     
