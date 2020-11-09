@@ -100,7 +100,7 @@ NextitNet_TF_Pretrain_topk.py
         'kernel_size': 3,
         'learning_rate':0.001,
         'batch_size':32,# you can try 32, 64, 128, 256, etc.
-        'iterations':5, #you can stop it once it saves parameters once
+        'iterations':5, #you can just stop pretraining if performance does not change in the testing set. It may not need 5 iterations
         'is_negsample':True #False denotes no negative sampling
     }
 ```     
