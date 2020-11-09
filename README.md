@@ -104,10 +104,10 @@ NextitNet_TF_Pretrain_topk.py
         'iterations':5, #you can stop it once converged
         'is_negsample':True #False denotes no negative sampling
     }
-     
+```     
                         
 PeterRec settings (E.g.,PeterRec_cau_serial.py/PeterRec_cau_serial_lambdafm):
-
+``` js
     parser.add_argument('--eval_iter', type=int, default=500,
                         help='Sample generator output evry x steps')
     parser.add_argument('--save_para_every', type=int, default=500,
