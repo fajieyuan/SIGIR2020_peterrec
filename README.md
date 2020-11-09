@@ -84,8 +84,8 @@ ColdRec2 (clicking and liking data is separated): https://drive.google.com/file/
 
 
 ### recommendation settings (Be careful!)
-### it will be much slower if eval_iter is smaller as it represents how often you perform evaluation. 
-### it may takes only 1 or 2 iterations to converge. 
+
+#### it will be much slower if 'eval_iter' is smaller as it represents how often you perform evaluation.  It may takes only 1 or 2 iterations to converge. 
 
 NextitNet_TF_Pretrain_topk.py
 ```js 
