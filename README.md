@@ -17,8 +17,9 @@ Please cite our paper if you use our code or datasets in your publication.
   year={2020}
 }
 ```
-If you want to use PeterRec for in real production system. I strongly suggest (1) understand the code released here ; (2)using TFRecord and tf.estimator to replace tf.placeholder, which is around 7~10 times faster.
+# If you want to use PeterRec for in real production system. I strongly suggest (1) understand the code released here ; (2)using TFRecord and tf.estimator to replace tf.placeholder, which is around 7~10 times faster.
 
+---------------------------------------------------
 
 PeterRec_cau_parallel.py: PeterRec with causal cnn and parallel insertion
 
