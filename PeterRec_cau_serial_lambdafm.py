@@ -204,8 +204,8 @@ def main():
                 print "-------------------------------------------------------train1"
                 print "LOSS: {}\Reg_LOSS: {}\tITER: {}\tBATCH_NO: {}\t STEP:{}\t total_batches:{}".format(
                     loss_out, reg_losses_out,iter, batch_no, numIters, train_set.shape[0] / batch_size)
-                print "TIME FOR BATCH", end - start
-                print "TIME FOR ITER (mins)", (end - start) * (train_set.shape[0] / batch_size) / 60.0
+            
+             
 
             batch_no += 1
 
