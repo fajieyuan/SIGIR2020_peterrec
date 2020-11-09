@@ -56,7 +56,7 @@ I refer you to a recent papaer "On Sampled Metrics for Item Recommendation" for 
 
 or
 
-First:  python GRec_TF_Pretrain.py
+First:  python GRec_TF_Pretrain.py (if you have it is slower, I suggest you slightly change the evaluation following `NextitNet_TF_Pretrain_topk.py')
 
 Second: python PeterRec_noncau_parallel.py
 
@@ -121,7 +121,7 @@ PeterRec settings (E.g.,PeterRec_cau_serial.py):
         'kernel_size': 3,
         'learning_rate':0.0001,
         'batch_size':512, #you can not use batch_size=1 since in the following you use np.squeeze will reuduce one dimension
-        'iterations': 20,
+        'iterations': 20, # note this is not the default setup, you should set it according to your own dataset by watching the performance in your testing set.
         'has_positionalembedding': args.has_positionalembedding
     }
   
