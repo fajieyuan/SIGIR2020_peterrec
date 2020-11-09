@@ -41,7 +41,7 @@ GRec_TF_Pretrain.py: Petrained by the encoder of GRec [1] (i.e., noncausal cnn)
 
 You can directly run our code:
 
-First:  python NextitNet_TF_Pretrain.py (or NextitNet_TF_Pretrain_topk.py is much faster than  NextitNet_TF_Pretrain.py )
+First:  python  NextitNet_TF_Pretrain_topk.py  (NextitNet_TF_Pretrain.py is much slower than NextitNet_TF_Pretrain_topk.py due to the output of full softmax)
 
 After convergence(you can stop it once the pretrained model is saved!)
 
@@ -92,12 +92,12 @@ NextitNet_TF_Pretrain.py
                         help='data path')
     model_para = {
         'item_size': len(items),
-        'dilated_channels': 256,
+        'dilated_channels': 64, # in the paper we use 256, 64 is okay for our dataset
         'dilations': [1,4,1,4,1,4,1,4,],
         'kernel_size': 3,
         'learning_rate':0.001,
         'batch_size':16,# you can try 32, 64, 128, 256, etc.
-        'iterations':100, #you can stop it once converged
+        'iterations':5, #you can stop it once converged
         'is_negsample':True #False denotes no negative sampling
     }
      
@@ -113,13 +113,13 @@ PeterRec settings (E.g.,PeterRec_cau_serial.py):
     model_para = {
         'item_size': len(items),
         'target_item_size': len(targets),
-        'dilated_channels': 256,
+        'dilated_channels': 64,
         'cardinality': 1, # 1 is ResNet, otherwise is ResNeXt (performs similarly, but slowly)
         'dilations': [1,4,1,4,1,4,1,4,],
         'kernel_size': 3,
         'learning_rate':0.0001,
         'batch_size':512, #you can not use batch_size=1 since in the following you use np.squeeze will reuduce one dimension
-        'iterations': 100,
+        'iterations': 20,
         'has_positionalembedding': args.has_positionalembedding
     }
   
