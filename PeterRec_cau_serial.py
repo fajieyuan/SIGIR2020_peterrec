@@ -183,8 +183,6 @@ def main():
         batch_no = 0
         batch_size = model_para['batch_size']
         while (batch_no + 1) * batch_size < train_set.shape[0]:
-
-            start = time.time()
             #the first n-1 is source, the last one is target
             #item_batch=[[1,2,3],[4,5,6]]
             item_batch = train_set[batch_no * batch_size: (batch_no + 1) * batch_size, :]
@@ -201,14 +199,12 @@ def main():
                     itemseq_input_target_pos:pos_target,
                     itemseq_input_target_neg:neg_target
                 })
-            end = time.time()
+        
 
             if numIters % args.eval_iter == 0:
                 print "-------------------------------------------------------train1"
                 print "LOSS: {}\Reg_LOSS: {}\tITER: {}\tBATCH_NO: {}\t STEP:{}\t total_batches:{}".format(
                     loss_out, reg_losses_out,iter, batch_no, numIters, train_set.shape[0] / batch_size)
-                print "TIME FOR BATCH", end - start
-                print "TIME FOR ITER (mins)", (end - start) * (train_set.shape[0] / batch_size) / 60.0
 
             batch_no += 1
 
