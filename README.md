@@ -84,20 +84,20 @@ ColdRec2 (clicking and liking data is separated): https://drive.google.com/file/
 
 
 ### recommendation settings (Be careful!)
-
+### it will be much slower if eval_iter is smaller since it means how often you perform evaluation.
 
 NextitNet_TF_Pretrain_topk.py
 
-    parser.add_argument('--eval_iter', type=int, default= <span style="color: green"> 10000 </span> ,
+    parser.add_argument('--eval_iter', type=int, default=10000,
                         help='Sample generator output evry x steps')
-    parser.add_argument('--save_para_every', type=int, default=<span style="color: green"> 10000 </span>,
+    parser.add_argument('--save_para_every', type=int, default=10000,
                         help='save model parameters every')
     parser.add_argument('--datapath', type=str, default='Data/Session/coldrec2_pre.csv',
                         help='data path')
     model_para = {
         'item_size': len(items),
         'dilated_channels': 64, # in the paper we use 256, 64 is okay for our dataset
-        'dilations': <span style="color: green">  [1,4,1,4,1,4,1,4,],  </span>
+        'dilations': [1,4,1,4,1,4,1,4,], # note 1 4 means  1 2 4 8
         'kernel_size': 3,
         'learning_rate':0.001,
         'batch_size':16,# you can try 32, 64, 128, 256, etc.
