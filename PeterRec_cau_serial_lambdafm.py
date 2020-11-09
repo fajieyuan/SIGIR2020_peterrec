@@ -94,7 +94,7 @@ def main():
         'kernel_size': 3,
         'learning_rate':0.0005,
         'batch_size':3, #you can not use batch_size=1 since we use np.squeeze will reuduce one dimension
-        'iterations': 400,
+        'iterations': 10,
         'has_positionalembedding': args.has_positionalembedding
     }
     itemrec = generator_recsys.NextItNet_Decoder(model_para)
