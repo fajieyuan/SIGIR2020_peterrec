@@ -17,7 +17,7 @@ Please cite our paper if you use our code or datasets in your publication.
   year={2020}
 }
 ```
-# If you want to use PeterRec in real production system. I strongly suggest: (1) understand our code released here ; (2)using TFRecord and tf.estimator to replace tf.placeholder, which is around 7~10 times faster; (3) contact fajieyuan@tencent.com if you could not achieve expected results. (E.g., No personalization for new user recommendation, 99% there are bugs in your project!!)
+## If you want to use PeterRec in real production system. I strongly suggest: (1) understand our code released here ; (2)using TFRecord and tf.estimator to replace tf.placeholder, which is around 7~10 times faster; (3) contact fajieyuan@tencent.com if you could not achieve expected results. (E.g., No personalization for new user recommendation, 99% there are bugs in your project!!)
 
 ---------------------------------------------------
 
@@ -87,7 +87,7 @@ ColdRec2 (clicking and liking data is separated): https://drive.google.com/file/
 ### it will be much slower if eval_iter is smaller since it means how often you perform evaluation.
 
 NextitNet_TF_Pretrain_topk.py
-
+```js 
     parser.add_argument('--eval_iter', type=int, default=10000,
                         help='Sample generator output evry x steps')
     parser.add_argument('--save_para_every', type=int, default=10000,
@@ -127,6 +127,7 @@ PeterRec settings (E.g.,PeterRec_cau_serial.py/PeterRec_cau_serial_lambdafm):
         'has_positionalembedding': args.has_positionalembedding
     }
   
+```
 
 ## Environments
 * Tensorflow (version: 1.7.0)
