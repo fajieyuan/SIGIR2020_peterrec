@@ -17,6 +17,7 @@ Please cite our paper if you use our code or datasets in your publication.
   year={2020}
 }
 ```
+If you want to use PeterRec for in real production system. I strongly suggest (1) understand the code released here ; (2)using TFRecord and tf.estimator to replace tf.placeholder, which is around 7~10 times faster.
 
 
 PeterRec_cau_parallel.py: PeterRec with causal cnn and parallel insertion
@@ -41,7 +42,7 @@ GRec_TF_Pretrain.py: Petrained by the encoder of GRec [1] (i.e., noncausal cnn)
 
 You can directly run our code:
 
-First:  python  NextitNet_TF_Pretrain_topk.py  (NextitNet_TF_Pretrain.py is much slower than NextitNet_TF_Pretrain_topk.py due to the output of full softmax)
+First:  python  NextitNet_TF_Pretrain_topk.py  (NextitNet_TF_Pretrain.py is slower than NextitNet_TF_Pretrain_topk.py due to the output of full softmax in the evaluation stage.)
 
 After convergence(you can stop it once the pretrained model is saved!)
 
