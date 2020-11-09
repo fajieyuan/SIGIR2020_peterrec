@@ -83,19 +83,21 @@ ColdRec2 (clicking and liking data is separated): https://drive.google.com/file/
 ```
 
 
-### recommendation settings
-NextitNet_TF_Pretrain.py
+### recommendation settings (Be careful!)
 
-    parser.add_argument('--eval_iter', type=int, default=10000,
+
+NextitNet_TF_Pretrain_topk.py
+
+    parser.add_argument('--eval_iter', type=int, default= <span style="color: green"> 10000 </span> ,
                         help='Sample generator output evry x steps')
-    parser.add_argument('--save_para_every', type=int, default=10000,
+    parser.add_argument('--save_para_every', type=int, default=<span style="color: green"> 10000 </span>,
                         help='save model parameters every')
     parser.add_argument('--datapath', type=str, default='Data/Session/coldrec2_pre.csv',
                         help='data path')
     model_para = {
         'item_size': len(items),
         'dilated_channels': 64, # in the paper we use 256, 64 is okay for our dataset
-        'dilations': [1,4,1,4,1,4,1,4,],
+        'dilations': <span style="color: green">  [1,4,1,4,1,4,1,4,],  </span>
         'kernel_size': 3,
         'learning_rate':0.001,
         'batch_size':16,# you can try 32, 64, 128, 256, etc.
@@ -104,7 +106,7 @@ NextitNet_TF_Pretrain.py
     }
      
                         
-PeterRec settings (E.g.,PeterRec_cau_serial.py):
+PeterRec settings (E.g.,PeterRec_cau_serial.py/PeterRec_cau_serial_lambdafm):
 
     parser.add_argument('--eval_iter', type=int, default=500,
                         help='Sample generator output evry x steps')
