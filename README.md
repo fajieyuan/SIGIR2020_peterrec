@@ -17,7 +17,7 @@ Please cite our paper if you use our code or datasets in your publication.
   year={2020}
 }
 ```
-## If you want to use PeterRec in real production system. I strongly suggest: (1) understand our code released here ; (2)using TFRecord and tf.estimator to replace tf.placeholder (very slow), which is around 10 times faster; (3) contact fajieyuan@tencent.com if you could not achieve expected results. (E.g., No personalization for new user recommendation, 99% there are bugs in your project!!)
+## If you want to use PeterRec in real production system. I strongly suggest: (1) understand our code released here ; (2)using TFRecord (tf.data.Dataset) and tf.estimator to replace feed_dict (slow), which is around 10 times faster; (3) contact fajieyuan@tencent.com if you could not achieve expected results. (E.g., No personalization for new user recommendation, 99% there are bugs in your project!!)
 
 ---------------------------------------------------
 
