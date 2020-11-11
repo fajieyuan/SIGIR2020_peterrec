@@ -188,7 +188,7 @@ def main():
                         if (batch_no_test > 20):
                             break
                     else:
-                        if (batch_no_test > 500):
+                        if (batch_no_test > 50):
                             break
                     item_batch = valid_set[batch_no_test * batch_size_test: (batch_no_test + 1) * batch_size_test, :]
 
@@ -223,7 +223,7 @@ def main():
 
                     batch_no_test += 1
                     if (numIters / (args.eval_iter) < 10):
-                        if (batch_no_test == 10):
+                        if (batch_no_test == 20):
                             print "mrr_5:", sum(curr_preds_5) / float(len(curr_preds_5)), "hit_5:", sum(
                                 rec_preds_5) / float(
                                 len(rec_preds_5)), "ndcg_5:", sum(ndcg_preds_5) / float(
