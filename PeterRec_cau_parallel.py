@@ -202,7 +202,7 @@ def main():
             item_batch = train_set[batch_no * batch_size: (batch_no + 1) * batch_size, :]
 
             pos_batch=item_batch[:,-1]#[3 6] used for negative sampling
-            source_batch=item_batch[:,:-1]#
+            # source_batch=item_batch[:,:-1]#
             pos_target=item_batch[:,-1:]#[[3][6]]
             neg_target = np.array([[random_neq(1, targets_len, s)] for s in pos_batch])
 
@@ -211,7 +211,7 @@ def main():
             _, loss_out, reg_losses_out = sess.run(
                 [optimizer, loss, reg_losses],
                 feed_dict={
-                    itemrec.itemseq_input: source_batch,
+                    itemrec.itemseq_input: item_batch,
                     itemseq_input_target_pos:pos_target,
                     itemseq_input_target_neg:neg_target
                 })
@@ -238,7 +238,7 @@ def main():
                             break
                     item_batch = valid_set[batch_no_test * batch_size_test: (batch_no_test + 1) * batch_size_test, :]
                     pos_batch = item_batch[:, -1]  # [3 6] used for negative sampling
-                    source_batch = item_batch[:, :-1]  #
+                    # source_batch = item_batch[:, :-1]  #
                     pos_target = item_batch[:, -1:]  # [[3][6]]
                     # randomly choose 99 negative items
                     neg_target = np.array([random_negs(1, targets_len, negtive_samples, s) for s in pos_batch])
@@ -246,7 +246,7 @@ def main():
                     [top_k_batch] = sess.run(
                         [top_k_test],
                         feed_dict={
-                            itemrec.itemseq_input: source_batch,
+                            itemrec.itemseq_input: item_batch,
                             itemseq_input_target_label: target
                         })
                     #note that  in top_k_batch[1], such as [1 9 4 5 0], we just need to check whether 0 is here, that's fine
