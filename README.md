@@ -1,6 +1,7 @@
 # SIGIR2020_PeterRec
 # Parameter-Efficient Transfer from Sequential Behaviors for User Modeling and Recommendation
-Chinese Introduction: https://zhuanlan.zhihu.com/p/139048117
+Chinese Introduction: https://zhuanlan.zhihu.com/p/139048117 
+https://cloud.tencent.com/developer/article/1741188
 
 <p align="center">
     <br>
@@ -17,7 +18,7 @@ Please cite our paper if you use our code or datasets in your publication.
   year={2020}
 }
 ```
-## If you want to use PeterRec in real production system. I strongly suggest: (1) understand our code released here ; (2)using TFRecord (tf.data.Dataset) and tf.estimator to replace feed_dict (slow), which is around 10 times faster; (3) contact fajieyuan@tencent.com if you could not achieve expected results. (E.g., No personalization for new user recommendation, 99% there are bugs in your project!!)
+## If you want to use PeterRec in real production system. I strongly suggest: (1) understand our code released here ; (2)using TFRecord (tf.data.Dataset) and tf.estimator to replace feed_dict (slow), which is around 7～10 times faster; (3) contact fajieyuan@tencent.com if you could not achieve expected results. (E.g., No personalization for new user recommendation, 99% there are bugs in your project!!)
 
 ---------------------------------------------------
 
