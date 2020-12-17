@@ -110,8 +110,8 @@ def main():
         'dilations': [1,4,1,4,1,4,1,4,],
         'kernel_size': 3,
         'learning_rate':0.001,
-        'batch_size':2,
-        'iterations':400,
+        'batch_size':2, #change it if you use real dataset, suggest you use 64 128 258
+        'iterations':2,
         'is_negsample':False #False denotes using full softmax
     }
 
