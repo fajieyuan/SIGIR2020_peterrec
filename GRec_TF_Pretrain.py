@@ -247,7 +247,7 @@ def main():
         'kernel_size': 3,
         'learning_rate':0.001,
         'batch_size':2,
-        'iterations':400,
+        'iterations':2,
         'max_position':args.max_position,#maximum number of for positional embedding, it has to be larger than the sequence lens
         'has_positionalembedding':args.has_positionalembedding,
         'is_negsample':True #False denotes no negative sampling
