@@ -111,7 +111,7 @@ def main():
         'kernel_size': 3,
         'learning_rate':0.001,
         'batch_size':2,
-        'iterations':400,
+        'iterations':3,
         'is_negsample':False #False denotes using full softmax
     }
 
