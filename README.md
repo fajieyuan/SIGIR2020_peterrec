@@ -176,6 +176,6 @@ PeterRec settings (E.g.,PeterRec_cau_serial.py/PeterRec_cau_serial_lambdafm):
 }
 ```
 
-## Hiring:
-If you want to work with Dr. Yuan Fajie https://fajieyuan.github.io/, Please contact him by email yuanfajie@westlake.edu.cn. His lab is now recruiting visiting students, interns, research assistants, posdocs, and research scientists. You can also contact him if you want to apply the Phd degree of Westlake University. 
-He is open to various collaborations.
+#  Hiring
+If you want to work with Dr. Yuan Fajie https://fajieyuan.github.io/, Please contact him by email yuanfajie@westlake.edu.cn. His lab is now recruiting visiting students, interns, research assistants, posdocs (Chinese yuan: 450,000-550,000 per year), and research scientists. You can also contact him if you want to  pursue Phd degree at Westlake University. 
+He is open to various collaborations. You are also able to contact him by weichat (wuxiangwangyuan) if you have ideas or papers for collaboration.
