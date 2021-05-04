@@ -146,9 +146,8 @@ def main():
             start = time.time()
 
             item_batch = train_set[batch_no * batch_size: (batch_no + 1) * batch_size, :]
-            _, loss, results = sess.run(
-                [optimizer, itemrec.loss,
-                 itemrec.arg_max_prediction],
+            _, loss = sess.run(
+                [optimizer, itemrec.loss],
                 feed_dict={
                     itemrec.itemseq_input: item_batch
                 })
