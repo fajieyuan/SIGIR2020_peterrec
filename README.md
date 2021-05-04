@@ -6,6 +6,8 @@ https://zhuanlan.zhihu.com/p/139048117
 
 https://blog.csdn.net/abcdefg90876/article/details/109505669
 
+https://blog.csdn.net/weixin_44259490/article/details/114850970
+
 
 <p align="center">
     <br>
@@ -177,5 +179,6 @@ PeterRec settings (E.g.,PeterRec_cau_serial.py/PeterRec_cau_serial_lambdafm):
 ```
 
 #  Hiring
-If you want to work with Dr. Yuan Fajie https://fajieyuan.github.io/, Please contact him by email yuanfajie@westlake.edu.cn. His lab is now recruiting visiting students, interns, research assistants, posdocs (Chinese yuan: 450,000-550,000 per year), and research scientists. You can also contact him if you want to  pursue Phd degree at Westlake University. 
-Feel free to talk to him (by weichat: wuxiangwangyuan) if you have ideas or papers for collaboration. He is open to various collaborations. 
+
+If you want to work with Fajie https://fajieyuan.github.io/, Please contact him by email yuanfajie@westlake.edu.cn. His lab is now recruiting visiting students, interns, research assistants, posdocs (Chinese yuan: 450,000-550,000 per year), and research scientists. You can also contact him if you want to  pursue a Phd degree at Westlake University. 
+Please feel free to talk to him (by weichat: wuxiangwangyuan) if you have ideas or papers for collaboration. He is open to various collaborations.  
