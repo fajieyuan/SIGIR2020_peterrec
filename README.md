@@ -101,7 +101,7 @@ NextitNet_TF_Pretrain_topk.py
                         help='data path')
     model_para = {
         'item_size': len(items),
-        'dilated_channels': 64, # in the paper we use 256, 64 is okay for our dataset
+        'dilated_channels': 64, # note in the paper we use 256
         'dilations': [1,4,1,4,1,4,1,4,], # note 1 4 means  1 2 4 8
         'kernel_size': 3,
         'learning_rate':0.001,
