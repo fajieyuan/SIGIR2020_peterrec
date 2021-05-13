@@ -1,12 +1,15 @@
 # SIGIR2020_PeterRec
 # Parameter-Efficient Transfer from Sequential Behaviors for User Modeling and Recommendation
-Chinese Introduction:
+
+Posts:
 
 https://zhuanlan.zhihu.com/p/139048117 
 
 https://blog.csdn.net/abcdefg90876/article/details/109505669
 
 https://blog.csdn.net/weixin_44259490/article/details/114850970
+
+https://programmersought.com/article/36196143813/ 
 
 
 <p align="center">
