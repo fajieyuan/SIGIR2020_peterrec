@@ -174,11 +174,12 @@ PeterRec settings (E.g.,PeterRec_cau_serial.py/PeterRec_cau_serial_lambdafm):
 ```
 ```
 [4]
-@article{yuan2020one,
-  title={One Person, One Model, One World: Learning Continual User Representation without Forgetting},
+@inproceedings{yuan2021one,
+  title={One person, one model, one world: Learning continual user representation without forgetting},
   author={Yuan, Fajie and Zhang, Guoxiao and Karatzoglou, Alexandros and Jose, Joemon and Kong, Beibei and Li, Yudong},
-  journal={arXiv preprint arXiv:2009.13724},
-  year={2020}
+  booktitle={Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval},
+  pages={696--705},
+  year={2021}
 }
 ```
 
