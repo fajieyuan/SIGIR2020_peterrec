@@ -76,7 +76,7 @@ In addition, there are some other improvement places, such as the negative sampl
 (LambdaFM: Learning Optimal Ranking with Factorization Machines Using Lambda Surrogates), i.e., PeterRec_cau_serial_lambdafm.py. Similarly, our pretraining network (e.g., NextitNet_TF_Pretrain.py) also employs a basic sampling function in TF, you can also replace it with your own one if you are dealing with hundreds of millions of items in a very large-scale system.
 ### DataSet （desensitized）Links
 ```
-Transfer Learning Recommendation Dataset：
+Recommendation Dataset for pretraining， transfer learning and user representation learning：
 ColdRec2: https://drive.google.com/open?id=1OcvbBJN0jlPTEjE0lvcDfXRkzOjepMXH
 ColdRec1: https://drive.google.com/open?id=1N7pMXLh8LkSYDX30-zId1pEMeNDmA7t6
 
