@@ -79,6 +79,8 @@ In addition, there are some other improvement places, such as the negative sampl
 Recommendation Dataset for pretraining， transfer learning and user representation learning：
 ColdRec2: https://drive.google.com/open?id=1OcvbBJN0jlPTEjE0lvcDfXRkzOjepMXH
 ColdRec1: https://drive.google.com/open?id=1N7pMXLh8LkSYDX30-zId1pEMeNDmA7t6
+    
+可用于推荐系统预训练，迁移学习，跨域推荐，冷启动推荐，用户表征学习，自监督学习等任务。
 
 ```
 Note that we have provided the original dataset used in the paper and several preprocessed datasets for an easy try. That is, for simplicity, we provide a source dataset along with a target dataset for each task, while in practice it is suggested to use one source dataset pretrained to serve all target tasks (make sure your source dataset covers all ID indices in the target task).
