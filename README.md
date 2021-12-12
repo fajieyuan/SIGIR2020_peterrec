@@ -2,6 +2,7 @@
 # Parameter-Efficient Transfer from Sequential Behaviors for User Modeling and Recommendation
 
 Posts:
+https://zhuanlan.zhihu.com/p/437671278
 
 https://zhuanlan.zhihu.com/p/139048117 
 
@@ -10,6 +11,10 @@ https://blog.csdn.net/abcdefg90876/article/details/109505669
 https://blog.csdn.net/weixin_44259490/article/details/114850970
 
 https://programmersought.com/article/36196143813/ 
+
+https://zhuanlan.zhihu.com/p/430145630
+
+
 
 
 <p align="center">
