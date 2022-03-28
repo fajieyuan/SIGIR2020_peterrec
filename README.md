@@ -33,7 +33,9 @@ Please cite our paper if you use our code or datasets in your publication.
 }
 ```
 ## If you want to use PeterRec in real production system. I strongly suggest: (1) understand our code released here ; (2)using TFRecord (tf.data.Dataset) and tf.estimator to replace feed_dict (slow), which is several times faster; (3) contact fajieyuan@tencent.com if you could not achieve expected results. (E.g., No personalization for new user recommendation, 99% there are bugs in your project!!)
-NextItNet pytorch version: https://github.com/syiswell/NextItNet-Pytorch
+
+## NextItNet pytorch version: https://github.com/syiswell/NextItNet-Pytorch
+## GRec pytorch version: https://github.com/hangjunguo/GRec
 
 ---------------------------------------------------
 
