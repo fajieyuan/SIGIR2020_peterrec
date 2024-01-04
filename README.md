@@ -15,7 +15,7 @@ https://programmersought.com/article/36196143813/
 https://zhuanlan.zhihu.com/p/430145630
 
 
-## Pytorch Codes: https://github.com/yuangh-x/2022-NIPS-Tenrec
+## Pytorch Code is here: https://github.com/yuangh-x/2022-NIPS-Tenrec
 
 
 <p align="center">
