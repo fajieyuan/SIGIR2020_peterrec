@@ -15,6 +15,17 @@ https://programmersought.com/article/36196143813/
 https://zhuanlan.zhihu.com/p/430145630
 
 
+🤗 **Resources**: four Large-scale datasets for evaluating foundation / transferable / multi-modal / LLM recommendaiton models.
+
+-  **PixelRec**: https://github.com/westlake-repl/PixelRec
+
+-  **MicroLens(DeepMind Talk)**: https://github.com/westlake-repl/MicroLens
+  
+-  **NineRec(TPAMI)**: https://github.com/westlake-repl/NineRec 
+
+-  **Tenrec(NeurIPS)**: https://github.com/yuangh-x/2022-NIPS-Tenrec
+
+
 ## PeterRec Pytorch Code is here: https://github.com/yuangh-x/2022-NIPS-Tenrec
 
 
