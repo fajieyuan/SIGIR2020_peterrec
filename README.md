@@ -15,7 +15,7 @@ https://programmersought.com/article/36196143813/
 https://zhuanlan.zhihu.com/p/430145630
 
 
-🤗 **Resources**: four Large-scale datasets for evaluating foundation / transferable / multi-modal / LLM recommendaiton models.
+🤗 **New Resources**: four Large-scale datasets for evaluating foundation / transferable / multi-modal / LLM recommendaiton models.
 
 -  **PixelRec**: https://github.com/westlake-repl/PixelRec
 
