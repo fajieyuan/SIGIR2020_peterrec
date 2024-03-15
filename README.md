@@ -34,9 +34,10 @@ https://zhuanlan.zhihu.com/p/430145630
     <img src="https://pic1.zhimg.com/80/v2-68007f2a6b6fd29807d76065137a9cd8_1440w.jpg" width="400"/>
     <br>
 <p>
-  
-```
+
 Please cite our paper if you use our code or datasets in your publication.
+
+```
 @article{yuan2020parameter,
   title={Parameter-Efficient Transfer from Sequential Behaviors for User Modeling and Recommendation},
   author={Yuan, Fajie and He, Xiangnan and Karatzoglou, Alexandros and Zhang, Liguang},
